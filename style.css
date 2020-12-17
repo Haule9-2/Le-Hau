@@ -1,0 +1,104 @@
+body {
+    font-size: 30px;
+    font-style: italic ;
+  
+}
+#menu_top {
+  position: relative;
+  font-size: 70px;
+  height: 85px;
+  background-color:white;
+  text-align: center;
+  width: 100%;
+}
+#fixNav{
+  opacity: 0.8;
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+  display: block;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+#fixNav ul{
+  margin: 0;
+  padding: 0;
+}
+#fixNav ul li{
+  list-style:none inside;
+  width: auto;
+  float: left;
+  line-height: 55px; /*Cho text canh giữa menu*/
+  color: #252525;
+  padding: 0;
+  margin-right: 100px;
+  position: relative;
+}
+#fixNav ul li a{
+  text-transform: uppercase;
+  white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+  padding: 0 10px;
+  color: #252525;
+  display: block;
+  font-size: 0.9em;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;}
+  
+/*CSS Style cho Submenu*/
+#fixNav ul li ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  background-color:white;
+  border-bottom: 3px solid #0082bb;
+  padding-left: 0%;
+ 
+}
+
+#fixNav ul li ul li{
+  display: block;
+  padding:0;
+  margin: 0;
+  float: none; /*Bỏ float cho li cấp thứ 2*/
+}
+/* Hover cho submenu */
+#fixNav ul li:hover {
+  /* Hover thì li sẽ đổi màu*/
+  
+}
+#fixNav ul li:hover .sub-menu{
+  /*Display ra submenu*/
+  display: block;
+}
+ #main{
+   padding-top: 40px;
+   padding-bottom: 80px;
+ }
+ #box1{
+    text-align: center;      
+   line-height: 15px;
+   padding-bottom: 100px;
+ }
+  
+ #box2{
+   position: relative;
+   width: auto;
+ }
+  .title{
+    top: 0;
+    text-align: center; 
+  } 
+ #footer{
+   background-color: white;
+   height: 73px;
+   top: 590px;
+   left: 0;
+   right: 0;
+   
+   opacity: 0.6;
+   position: fixed;
+   text-align: center;
+ }
